@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //Task 1
+    float a = 1;
+    float b = 12.21;
+    float y = (0.81 - cbrt(a) - (1 / 2.125) * cbrt(b)) * exp(a);
+    cout << "y = " << y;
+    
+    //Task 2
+    float a = 3;
+    float b = 2.712;
+    float y = pow(pow(a, 2) / pow(b, 3), (float)2/3) * exp((0.807 * (1 - pow(sin((a - b) * M_PI/4), (float)2))) / (0.312 * (1 + pow(cos((b + a) * M_PI/4), (float)2))));
+    cout << "y = " << y;
+}
